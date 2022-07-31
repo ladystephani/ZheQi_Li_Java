@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gamestore-catalog" />
         <module name="config-server" />
+        <module name="gamestore-invoicing" />
+        <module name="gamestore-catalog" />
         <module name="service-registry" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="1.8" />
       <module name="gamestore-catalog" target="1.8" />
+      <module name="gamestore-invoicing" target="1.8" />
       <module name="service-registry" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-server" options="-parameters" />
       <module name="gamestore-catalog" options="-parameters" />
+      <module name="gamestore-invoicing" options="-parameters" />
       <module name="service-registry" options="-parameters" />
     </option>
   </component>
