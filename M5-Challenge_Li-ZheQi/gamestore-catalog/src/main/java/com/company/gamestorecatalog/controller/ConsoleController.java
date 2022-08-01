@@ -4,6 +4,7 @@ import com.company.gamestorecatalog.service.GameStoreCatalogServiceLayer;
 
 import com.company.gamestorecatalog.viewModel.ConsoleViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/console")
 @CrossOrigin(origins = {"http://localhost:3000"})
+@RefreshScope
 public class ConsoleController {
 
     @Autowired
